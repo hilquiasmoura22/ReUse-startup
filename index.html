@@ -3,47 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReUse Economia</title>
+    <title>ReUse - Economia Circular</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <div class="logo">Re<span>Use</span></div>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#impacto">Impacto</a></li>
                 <li><a href="#contato" class="btn-nav">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
-    
+
 <section class="hero">
     <div class="hero-content">
         <h1>Economia Circular e Recondicionamento Eletrônico</h1>
-        <p>Tecnologia acessível e redução drástica do lixo eletrônico na nossa região</p>
+        <p class="desc">Tecnologia acessível e redução drástica do lixo eletrônico na nossa região.</p>
         <div class="hero-btns">
-            <a href="cadastro" class="btn btn-doar">Quero Doar</a>
+            <a href="#cadastro" class="btn btn-doar">Quero Doar</a>
             <a href="catalogo.html" class="btn btn-comprar">Quero Comprar</a>
         </div>
     </div>
 </section>
+
+    
 <section id="sobre" class="container">
     <h2>O Nosso Propósito</h2>
-    <p>Criarmos um ciclo sustentavel e inteligente para a tecnologia</p>
+    <p class="desc">Criamos um ciclo sustentável e inteligente para a tecnologia.</p>
     <div class="cards">
-        <a href="https://en.wikipedia.org/wiki/Electronic_waste" target="_blank" class="card-link">
+        <a href="https://pt.wikipedia.org/wiki/Res%C3%ADduo_eletr%C3%B4nico" target="_blank" class="card-link">
             <div class="card problem-card">
                 <h3>Lixo Eletrônico</h3>
-                <P>O crescimento alarmante do descarte incorreto impacta o meio ambiente global.</P>
-                <small>Saiba mais na wiki!</small>
+                <p class="desc">O crescimento alarmante do descarte incorreto impacta o meio ambiente global.</p>
+                <small>Saiba mais na Wiki ↗</small>
             </div>
         </a>
+        
         <a href="https://pt.wikipedia.org/wiki/Exclus%C3%A3o_digital" target="_blank" class="card-link">
-            
+            <div class="card problem-card">
+                <h3>Exclusão Digital</h3>
+                <p class="desc">A dificuldade de acesso a dispositivos modernos em cidades pequenas e zonas rurais.</p>
+                <small>Saiba mais na Wiki ↗</small>
+            </div>
         </a>
+
     </div>
 </section>
+    <section id="como-funciona" class="bg-green">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <div class="passos">
+                <div class="passo">
+                    <span><h3>1</h3></span>
+                    <h4>Doação</h4>
+                    <p class="desc">Você preenche o formulário e nós coletamos gratuitamente na sua casa.</p>
+                </div>
+                <div class="passo">
+                    <span><h3>2</h3></span>
+                    <h4>Reparo</h4>
+                    <p class="desc">Técnicos locais parceiros realizam o recondicionamento profissional.</p>
+                </div>
+                <div class="passo">
+                    <span><h3>3</h3></span>
+                    <h4>Revenda</h4>
+                    <p class="desc">Aparelhos com preço justo e garantia são vendidos pelo nosso site!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<section id="cadastro" class="container bg-light">
+    <h2>Faça sua Doação</h2>
+    <p>Preencha os dados abaixo e nossa equipe entrará em contato para agendar a coleta gratuita.</p>
+    <form class="cadastro-form">
+        <input type="text" placeholder="Seu Nome" required>
+        <input type="email" placeholder="Seu E-mail" required>
+        <select required>
+            <option value="" disabled selected>O que deseja doar?</option>
+            <option value="celular">Celular / Smartphone</option>
+            <option value="notebook">Notebook / Computador</option>
+            <option value="tablet">Tablet</option>
+            <option value="outros">Outros Acessórios</option>
+        </select>
+        <button type="submit" class="btn btn-donate">Enviar Solicitação</button>
+    </form>
+</section>
 
+<footer id="contato">
+    <script src="script.js"></script>
 </body>
 </html>

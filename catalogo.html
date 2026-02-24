@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - ReUse</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .catalog-container { padding: 50px 5%; }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: left;
+        }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            background: #eee;
+            object-fit: cover;
+        }
+        .product-info { padding: 20px; }
+        .price { color: var(--primary-green); font-size: 1.4rem; font-weight: bold; margin: 10px 0; }
+        .badge {
+            background: #e8f5e9;
+            color: var(--dark-green);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" onclick="location.href='index.html'" style="cursor:pointer">Re<span>Use</span></div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#impacto">Impacto</a></li>
+                <li><a href="#contato" class="btn-nav">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog-container">
+        <h2>Produtos Disponíveis</h2>
+        <p>Aparelhos recondicionados com peças originais e garantia.</p>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Smartphone" class="product-img">
+                <div class="product-info">
+                    <span class="badge">Grau A+</span>
+                    <h3>iPhone 11 64GB</h3>
+                    <p>Bateria 92%, sem marcas de uso.</p>
+                    <p class="price">R$ 1.850,00</p>
+                    <button class="btn-primary" style="width:100%">Reservar Agora</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Laptop" class="product-img">
+                <div class="product-info">
+                    <span class="badge">Revisado</span>
+                    <h3>MacBook Air M1</h3>
+                    <p>8GB RAM, 256GB SSD. Performance impecável.</p>
+                    <p class="price">R$ 4.200,00</p>
+                    <button class="btn-primary" style="width:100%">Reservar Agora</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400" alt="Tablet" class="product-img">
+                <div class="product-info">
+                    <span class="badge">Grau B</span>
+                    <h3>iPad 9ª Geração</h3>
+                    <p>Leves marcas na traseira, tela perfeita.</p>
+                    <p class="price">R$ 1.500,00</p>
+                    <button class="btn-primary" style="width:100%">Reservar Agora</button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer id="contato">
+        <p>Dúvidas sobre os aparelhos? Chame no WhatsApp.</p>
+        <p>(88) 4002-8922</p>
+        <button class="btn-primary" onclick="location.href='index.html'">Voltar para Home</button>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+:root {
+    --primary-green: #227545;
+    --dark-green: #166135;
+    --white: #ffffff;
+    --light-gray: #f4f4f4c2;
+    --text-color: #333;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { color: var(--text-color); line-height: 1.6; }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 100;
+}
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-green); }
+.logo span { color: var(--text-color); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+
+.hero {
+    background: linear-gradient(rgba(14, 189, 87, 0.8), rgba(5, 53, 25, 0.8)), 
+                url('https://media.istockphoto.com/id/2189587804/pt/foto/close-up-shot-of-boxes-with-computer-parts-sorted-for-recycling-at-sustainable-electronics.jpg?s=2048x2048&w=is&k=20&c=QnJCrd2TCacX6FFjIGPLXiSuDZ-ksE92pPX329d_wZM=');
+    background-size: cover;
+    color: var(--white);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+:root {
+    --primary-green: #227545;
+    --dark-green: #166135;
+    --white: #ffffff;
+    --light-gray: #f4f4f4c2;
+    --text-color: #333;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { color: var(--text-color); line-height: 1.6; }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 100;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-green); }
+.logo span { color: var(--text-color); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+
+.hero {
+    background: linear-gradient(rgba(15, 221, 101, 0.8), rgba(3, 56, 25, 0.8)), 
+                url('https://media.istockphoto.com/id/2189587804/pt/foto/close-up-shot-of-boxes-with-computer-parts-sorted-for-recycling-at-sustainable-electronics.jpg?s=2048x2048&w=is&k=20&c=QnJCrd2TCacX6FFjIGPLXiSuDZ-ksE92pPX329d_wZM=');
+    background-size: cover;
+    color: var(--white);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+
+.container { padding: 80px 10%; text-align: center; }
+
+.bg-green {    background: linear-gradient(rgba(15, 221, 101, 0.8), rgba(3, 56, 25, 0.8)), 
+                url('https://media.istockphoto.com/id/1277113485/pt/vetorial/recycling-and-sorting-of-waste-seamless-pattern-with-flat-line-white-icons-on-green.jpg?s=2048x2048&w=is&k=20&c=yvVI1rbE-szPEORTgL1HksurV6KxocYVDBp6wiNRz5w=');
+}
+
+.cards, .passos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card, .passo {
+    background: var(--white);
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    min-width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-primary, .btn-secondary, .btn-nav {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+    animation: slideUp 1s ease-out; 
+}
+
+.btn-doar {
+    background: var(--white);
+    color: var(--primary-green);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-doar:hover {
+    transform: scale(1.1);
+    background: var(--light-gray);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn-comprar {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-comprar:hover {
+    transform: scale(1.1);
+    background: var(--white);
+    color: var(--primary-green);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cadastro-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cadastro-form input, .cadastro-form select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.bg-light { background: #f9f9f9; }
+
+footer { background: #222; color: var(--white); padding: 50px 10%; text-align: center; }
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    width: 30%; 
+    min-width: 250px;
+    display: block;
+}
+
+.problem-card {
+    border: 2px solid transparent;
+    transition: 0.3s;
+    width: 100% !important; 
+}
+
+.problem-card:hover {
+    border-color: var(--primary-green);
+    transform: scale(1.02);
+}
+
+.problem-card small {
+    display: block;
+    margin-top: 15px;
+    color: var(--primary-green);
+    font-weight: bold;
+}
+.desc{
+    font-size: 16px;
+    font-weight: bold;
+}
